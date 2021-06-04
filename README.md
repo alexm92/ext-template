@@ -2,6 +2,12 @@
 
 ### While developing
 ```bash
+nvm use
+
+# install dependencies
+yarn install
+
+# to build the project and keep watching for changes
 yarn build.watch
 ```
 
