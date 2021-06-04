@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "ext-template",
+  "version": "1.0.0",
+  "description": "Browser Extension Template",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build.dev": "webpack --mode development --display-error-details --progress",
+    "build.prod": "webpack --mode production --display-error-details --progress",
+    "build.watch": "webpack --mode development --display-error-details --progress --watch",
+    "package": "rm -rf artifacts && npm run build.prod && web-ext build"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "preact": "^10.5.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@svgr/webpack": "^5.5.0",
+    "autoprefixer": "^10.2.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss": "^8.2.4",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.2",
+    "web-ext": "^4.1.0",
+    "webextension-polyfill": "^0.7.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
